@@ -11,9 +11,6 @@ body {
   padding-right: 0.9375rem,
 }
 
-img {
-  border-style: none;
-}
 .company {
   background-color: black;
   color: white;
@@ -29,8 +26,9 @@ img {
   margin: 0 auto;
 }
 @@media only screen and (max-width: 1024px)
-body {
-  font-size: 16px
+img {
+  width: 580px;
+  height: 960px;
 }
 
 @media only screen and (max-width: 470px){
@@ -125,6 +123,4 @@ footer {
   color: white;
   padding: 5rem 0;
   text-align: left;
-  margin-top: 4rem;
-  padding-top: 5rem;
 }
