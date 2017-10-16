@@ -33,6 +33,13 @@ body {
   font-size: 16px
 }
 
+@media only screen and (max-width: 470px){
+  .headline {
+    position: absolute;
+    width: 100%;
+  }
+}
+
 div {
   display: block;
 }
@@ -41,6 +48,8 @@ div {
   height: 25rem;
   background: url(../media/background.jpeg)
   center center / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .headline {
   background-color: black;
@@ -63,7 +72,6 @@ li {
 nav {
   background-color: firebrick;
   color: white;
-  display: block;
 }
 nav ul {
   display: flex;
@@ -71,4 +79,52 @@ nav ul {
   justify-content: space-between;
   padding: 0.75rem 0;
   list-style: none;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0px 0px;
+}
+.product-image {
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  border-image: initial;
+  padding: 2rem 0px;
+}
+.product-image img {
+  max-width: 47%;
+}
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+.info {
+  width: 35%;
+}
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
+  text-align: left;
+  margin-top: 4rem;
+  padding-top: 5rem;
 }
